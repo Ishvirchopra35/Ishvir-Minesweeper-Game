@@ -1,0 +1,65 @@
+Main Program:
+    Initialize Pygame
+    Create Game Window
+    Create Game Clock
+    
+    Loop:
+        Start New Game
+        Run Game Loop
+        Display End Screen
+        
+        If Quit Selected:
+            End Program
+
+Game Class:
+    Initialize Game:
+        Initialize Pygame
+        Create Game Window
+        Create Game Clock
+        
+    New Game:
+        Initialize Game Board
+        Place Mines
+        Place Clues
+        Display Initial Game Board
+        
+    Run Game Loop:
+        Loop:
+            Handle Player Input
+            Update Game State
+            Display Game Board
+            Check Win/Lose Conditions
+            
+            If Win:
+                Display Win Message
+                Break Loop
+            If Lose:
+                Display Lose Message
+                Break Loop
+            
+    Handle Player Input:
+        Listen for Mouse Clicks
+        If Left Click:
+            Uncover Tile
+        If Right Click:
+            Flag/Unflag Tile
+        
+    Update Game State:
+        If Tile Uncovered:
+            If Mine:
+                End Game (Explode Mine)
+            Else:
+                Uncover Adjacent Tiles (Recursive)
+        If Tile Flagged/Unflagged:
+            Toggle Flag Status
+        
+    Display Game Board:
+        Clear Game Window
+        Draw Board Background
+        Draw Tiles, Numbers, and Flags
+        
+    Check Win/Lose Conditions:
+        If All Safe Tiles Uncovered:
+            Mark Game as Win
+        If Mine Exploded:
+            Mark Game as Lose
