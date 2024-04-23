@@ -3,7 +3,7 @@ The program is a Minesweeper game implemented in Python using the Pygame, Random
 
 **To run the program:**
 
-**1.Make sure the assets, main.py, sprites.py, and settings.py are stored in the same location**
+**1. Make sure the assets, main.py, sprites.py, and settings.py are stored in the same location**
 
 **2. Open the 3 python source files in a Python IDE**
 
